@@ -1,0 +1,30 @@
+.header{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.header-nav-block__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+.header-nav-block-logo__text{
+    font-size: 24px;
+}
+.header-nav-block__link{
+    display: flex;
+    gap: 25px;
+    text-decoration: none;
+}
+.header-nav-block-link__a{
+    display: flex;
+    gap: 10px;
+    color: #f9f9f9;
+}
