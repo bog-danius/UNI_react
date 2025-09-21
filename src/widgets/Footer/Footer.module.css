@@ -1,0 +1,23 @@
+.footer {
+    background-color:#2c2c2c;
+    color: #f5f5f5;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    z-index: 1000;
+}
+
+.logoContainer {
+    margin-bottom: 1rem;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+}
+
+.love {
+    font-weight: 600;
+    font-size: 1rem;
+}
