@@ -1,4 +1,5 @@
 import React from "react";
+// @ts-ignore
 import styles from "./About.module.css";
 import type {IArticle} from "@type/nav.types";
 

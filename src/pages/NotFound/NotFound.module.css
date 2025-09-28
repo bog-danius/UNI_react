@@ -1,0 +1,23 @@
+.container {
+    text-align: center;
+    padding: 60px 20px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #2c2c2c;
+}
+
+.code {
+    font-size: 12rem;
+    margin: 0;
+    color: #ff4b4b;
+    font-weight: bold;
+}
+
+.text {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    color: #8f8e8e;
+}

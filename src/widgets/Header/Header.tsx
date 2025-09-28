@@ -1,4 +1,6 @@
 import React, {useState} from "react";
+import { Link } from "react-router-dom";
+// @ts-ignore
 import styles from "./Header.module.css";
 import {type INavItem} from "@type/nav.types";
 import Button from "@shared/components/Button";
@@ -16,20 +18,24 @@ const Header: React.FC<HeaderProps> = ({logo, navItems = []}) => {
     return (
         <header className={styles.header}>
             <div className={styles.logoContainer}>
-                {logo && <img src={logo} alt="logo" className={styles.logo}/>}
+                {logo && (
+                    <Link to="/">
+                        <img src={logo} alt="logo" className={styles.logo} />
+                    </Link>
+                )}
             </div>
 
             <nav className={`${styles.nav} ${isMobileOpen ? styles.mobileOpen : ""}`}>
                 <ul className={styles.navList}>
                     {navItems.map((item) => (
                         <li key={item.id} className={styles.navPoint}>
-                            <a href={item.href} className={styles.navLink}>
+                            <Link to={item.to} className={styles.navLink}>
                                 {item.label}
-                            </a>
+                            </Link>
                         </li>
                     ))}
                     <li className={styles.navPointMobile}>
-                        <Button text="Login" href="/login"/>
+                        <Button text="Login" to="/login"/>
                     </li>
                 </ul>
             </nav>
@@ -41,7 +47,7 @@ const Header: React.FC<HeaderProps> = ({logo, navItems = []}) => {
             </div>
 
             <div className={styles.loginDesktop}>
-                <Button text="Login" href="/login"/>
+                <Button text="Login" to="/login" />
             </div>
         </header>
     );

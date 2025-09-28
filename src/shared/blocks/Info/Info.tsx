@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+// @ts-ignore
 import styles from "./Info.module.css";
 import emailjs from "emailjs-com";
 
